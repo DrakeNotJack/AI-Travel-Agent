@@ -3,10 +3,8 @@
 ## **1. Project Core Value**
 
 This project is a lightweight demonstration of an intelligent travel assistant built upon the **Thought-Action-Observation (TAO)** paradigm. Through iterative cycles of reasoning, tool execution, and observation, the agent transforms vague user intentions into actionable travel solutions.  
-Future upgrades will enable proactive collaboration and decision-making, evolving the system into a true travel partner.
 
 The agent currently demonstrates four foundational capabilities:
-
 - **Task Decomposition**: Breaks down compound requests (e.g., “check weather + recommend attractions”) into sequential steps: *get weather → match attractions → synthesize answer*.
 - **Tool Invocation**: Uses external tools such as **wttr.in** (weather) and **Tavily** (attraction search) to retrieve real-time data.
 - **Context Awareness**: Maintains intermediate results (e.g., weather conditions) for downstream decisions.
@@ -16,9 +14,9 @@ The agent currently demonstrates four foundational capabilities:
 
 ## **2. Future Evolution: From Execution Assistant to Autonomous Collaborator**
 
-The current version focuses on step-by-step execution.  
-Future iterations aim to build an **Autonomous Travel Collaborator** capable of proactive planning, end-to-end task execution, transactional operations, and feedback-driven optimization.  
-This represents a shift from *“acting on instructions”* to *“delivering complete travel outcomes with user-supervised checkpoints.”*
+💡 This implementation serves as a Minimum Viable Demonstration.
+Future iterations aim to build a multi-tool agent system capable of autonomous itinerary generation, flight/hotel search, constraint-aware planning, and user-in-the-loop decision checkpoints to deliver reliable, user-controlled travel planning. Deployed via a modular MCP-like architecture with memory, tool routing, and iterative refinement.
+This represents a shift from *“acting on instructions”* to *“completing end-to-end travel planning tasks with user-supervised checkpoints.”*
 
 ### **2.1 Upgraded Positioning**
 
@@ -51,20 +49,21 @@ User feedback will also be incorporated to continuously refine future recommenda
    Introduce a closed-loop workflow:  
    *Requirement Breakdown → Planning → Execution → Critical Confirmation → Feedback → Iteration*.
 
-2. **Transactional Tool Integration**  
+2. **Map Integration**
+   Add Map API for attractions, accommodation and route planning.
+
+3. **Transactional Tool Integration**  
    Add APIs for flight booking (e.g., Fliggy), hotel booking (e.g., Ctrip), and build a full booking pipeline:  
    *search → filter → confirm → reserve → manage orders*.
 
-3. **Decision Confirmation & Feedback Module**  
+4. **Decision Confirmation & Feedback Module**  
    - Mandatory confirmation for booking/payment-related operations  
    - Lightweight feedback UI (ratings + tags) for structured data collection  
 
-4. **User Preference Modeling**  
+5. **User Preference Modeling**  
    Learn from historical preferences (hotel types, preferred flight times) to improve recommendation quality.
 
-5. **Security & Compliance**  
+6. **Security & Compliance**  
    - Encrypted storage for sensitive data  
    - Clear responsibility boundaries for booking steps  
    - Ensures safety and regulatory compliance  
-
-💡 This implementation serves as a Minimum Viable Demonstration. Future iterations will extend the agent from basic information retrieval to an Autonomous Collaborator capable of completing end-to-end travel tasks. By integrating transactional APIs, mandatory confirmation checkpoints, and a feedback-learning loop, the system will deliver reliable, user-controlled travel planning.

@@ -49,7 +49,7 @@ User feedback will also be incorporated to continuously refine future recommenda
    Introduce a closed-loop workflow:  
    *Requirement Breakdown → Planning → Execution → Critical Confirmation → Feedback → Iteration*.
 
-2. **Map Integration**
+2. **Map Integration**                
    Add Map API for attractions, accommodation and route planning.
 
 3. **Transactional Tool Integration**  
